@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Главная страница</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .account-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .account-button:hover {
+            background-color: #45a049;
+        }
+        
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .section-images {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .section-image {
+            flex-basis: 30%;
+        }
+        
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function loginpage() {
+            document.location.href = "http://localhost/login"
+        }
+
+        function goto(adr) {
+            document.location.href = adr
+        }
+    </script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Valiast</div>
+        <button class="account-button" onclick="loginpage()">Аккаунт</button>
+    </div>
+
+    <div class="header">
+        <h1>О нас</h1>
+        <h3>Valiast - позволит купить комплектующие для вашего ПК с гарантией. Получить рекомендации по сборке, бесплатную доставку и качесвтенное обслуживание!</h3>
+    </div>
+    <div class="section">
+        <div class="section-title">Процессоры</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx006.png" alt="Процессор 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx007.png" alt="Процессор 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx017.png" alt="Процессор 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Актуальные процессоры</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Видеокарты</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx023.png" alt="Видеокарта 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx019.png" alt="Видеокарта 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx026.png" alt="Видеокарта 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Актуальные видеокарты</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Системы охлаждения</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx008.png" alt="Охл 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx020.png" alt="Охл 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx025.png" alt="Охл 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Новейшие системы охлаждения</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Материнские платы</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx014.png" alt="Мать 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx010.png" alt="Мать 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx024.png" alt="Мать 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Актуальные материнские платы</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Жесткие и SSD диски</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx001.png" alt="Диск 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx013.png" alt="Диск 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx005.png" alt="Диск 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Новейшие жесткие и SSD диски</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Оперативная память</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx015.png" alt="Оперативка 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx.png" alt="Оперативка 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx022.png" alt="Оперативка 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Актуальная оперативная память</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Блоки питания</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx011.png" alt="Блок 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx012.png" alt="Блок 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx021.png" alt="Блок 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Новейшие блоки питания</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Оптические приводы</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx018.png" alt="Привод 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx002.png" alt="Привод 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx009.png" alt="Привод 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Мощные оптические приводы</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Корпуса</div>
+        <div class="section-images">
+            <div class="section-image"><img src="resizedx000.png" alt="Корпус 1" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx016.png" alt="Корпус 2" onclick="goto('test')"></div>
+            <div class="section-image"><img src="resizedx003.png" alt="Корпус 3" onclick="goto('test')"></div>
+        </div>
+        <div class="section-text">Красивые корпуса</div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-text">Для связи: klimov@mail.ru | +79 (78) 797-97-99 | Telegram: @Valiast | г. Симферополь, Проспект Победы, д. 25 </div>
+    </div>
+</body>
+
+</html>
